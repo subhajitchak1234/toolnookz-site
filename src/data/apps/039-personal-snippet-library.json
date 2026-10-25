@@ -1,0 +1,27 @@
+{
+  "id": 39,
+  "slug": "personal-snippet-library",
+  "name": "Personal Snippet Library",
+  "category": "notes",
+  "tagline": "Save reusable messages and text templates.",
+  "description": "Personal Snippet Library is a simple, offline-first Android app: save reusable messages and text templates. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Save reusable messages",
+    "Text templates"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "save reusable messages",
+      "text templates"
+    ],
+    "permissions": [],
+    "uses_clipboard": true,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

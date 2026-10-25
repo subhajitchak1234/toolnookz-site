@@ -1,0 +1,29 @@
+{
+  "id": 6,
+  "slug": "stopwatch-and-lap-tracker",
+  "name": "Stopwatch & Lap Tracker",
+  "category": "productivity",
+  "tagline": "Lap timing, personal records and session history.",
+  "description": "Stopwatch & Lap Tracker is a simple, offline-first Android app: lap timing, personal records and session history. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Lap timing",
+    "Personal records",
+    "Session history"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "lap timing",
+      "personal records",
+      "session history"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

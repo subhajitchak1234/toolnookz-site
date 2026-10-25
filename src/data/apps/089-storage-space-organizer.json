@@ -1,0 +1,27 @@
+{
+  "id": 89,
+  "slug": "storage-space-organizer",
+  "name": "Storage Space Organizer",
+  "category": "tools",
+  "tagline": "Review user-visible files by size.",
+  "description": "Storage Space Organizer is a simple, offline-first Android app: review user-visible files by size. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Review user-visible files by size"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "review user-visible files by size"
+    ],
+    "permissions": [
+      "files"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

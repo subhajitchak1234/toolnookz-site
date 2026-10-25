@@ -1,0 +1,27 @@
+{
+  "id": 35,
+  "slug": "text-diff-checker",
+  "name": "Text Diff Checker",
+  "category": "notes",
+  "tagline": "Compare two text passages and highlight changes.",
+  "description": "Text Diff Checker is a simple, offline-first Android app: compare two text passages and highlight changes. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Compare two text passages",
+    "Highlight changes"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "compare two text passages",
+      "highlight changes"
+    ],
+    "permissions": [],
+    "uses_clipboard": true,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

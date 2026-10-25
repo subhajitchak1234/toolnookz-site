@@ -1,0 +1,33 @@
+{
+  "id": 8,
+  "slug": "goal-progress-tracker",
+  "name": "Goal Progress Tracker",
+  "category": "productivity",
+  "tagline": "Goals, milestones, deadlines and progress.",
+  "description": "Goal Progress Tracker is a simple, offline-first Android app: goals, milestones, deadlines and progress. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Goals",
+    "Milestones",
+    "Deadlines",
+    "Progress"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "goals",
+      "milestones",
+      "deadlines",
+      "progress"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

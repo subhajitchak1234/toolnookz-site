@@ -1,0 +1,31 @@
+{
+  "id": 99,
+  "slug": "pet-care-reminder",
+  "name": "Pet Care Reminder",
+  "category": "lifestyle",
+  "tagline": "User-entered feeding, grooming and care reminders.",
+  "description": "Pet Care Reminder is a simple, offline-first Android app: user-entered feeding, grooming and care reminders. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "User-entered feeding",
+    "Grooming",
+    "Care reminders"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "user-entered feeding",
+      "grooming",
+      "care reminders"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "slug": "focus-timer",
+  "name": "Focus Timer",
+  "category": "productivity",
+  "tagline": "Pomodoro sessions, focus goals, session history and widget.",
+  "description": "Focus Timer is a simple, offline-first Android app: pomodoro sessions, focus goals, session history and widget. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Pomodoro sessions",
+    "Focus goals",
+    "Session history",
+    "Widget"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "pomodoro sessions",
+      "focus goals",
+      "session history",
+      "widget"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

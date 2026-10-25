@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="pill">Simple Apps. Better Life.</span>
+    <h1>Useful Android Apps<br>for Everyday Life</h1>
+    <p class="lead">We build simple, fast and privacy-friendly Android apps to make your daily tasks easier. Explore our collection and find the one you need.</p>
+    <form class="search big" action="/apps/" method="get" role="search">
+      <input type="search" name="q" placeholder="Search apps..." aria-label="Search apps">
+      <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    </form>
+    <ul class="trust">
+      <li><strong>Offline-first</strong><span>Works without internet</span></li>
+      <li><strong>Privacy focused</strong><span>Your data matters</span></li>
+      <li><strong>Simple &amp; fast</strong><span>Does one thing well</span></li>
+      <li><strong>Support</strong><span>We're here to help</span></li>
+    </ul>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="phone"><div class="phone-screen">
+      {% for a in featured %}{{ m.icon(a.cat, 52) }}{% endfor %}
+      {% for c in cats[:4] %}{{ m.icon(c, 52) }}{% endfor %}
+    </div></div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><h2>Featured Apps</h2><p class="muted">Discover some of our apps.</p></div><a class="btn ghost" href="/apps/">View All Apps →</a></div>
+  <div class="grid grid-4">{% for a in featured %}{{ m.card(a) }}{% endfor %}</div>
+</div></section>
+{% endblock %}

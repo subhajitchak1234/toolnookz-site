@@ -1,0 +1,25 @@
+{
+  "id": 37,
+  "slug": "line-sorter",
+  "name": "Line Sorter",
+  "category": "notes",
+  "tagline": "Sort lines alphabetically or numerically.",
+  "description": "Line Sorter is a simple, offline-first Android app: sort lines alphabetically or numerically. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Sort lines alphabetically or numerically"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "sort lines alphabetically or numerically"
+    ],
+    "permissions": [],
+    "uses_clipboard": true,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

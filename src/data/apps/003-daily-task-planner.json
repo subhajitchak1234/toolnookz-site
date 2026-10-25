@@ -1,0 +1,33 @@
+{
+  "id": 3,
+  "slug": "daily-task-planner",
+  "name": "Daily Task Planner",
+  "category": "productivity",
+  "tagline": "Tasks, priorities, deadlines and recurring tasks.",
+  "description": "Daily Task Planner is a simple, offline-first Android app: tasks, priorities, deadlines and recurring tasks. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Tasks",
+    "Priorities",
+    "Deadlines",
+    "Recurring tasks"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "tasks",
+      "priorities",
+      "deadlines",
+      "recurring tasks"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

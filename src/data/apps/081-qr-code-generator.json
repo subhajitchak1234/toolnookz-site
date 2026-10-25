@@ -1,0 +1,29 @@
+{
+  "id": 81,
+  "slug": "qr-code-generator",
+  "name": "QR Code Generator",
+  "category": "tools",
+  "tagline": "Generate QR codes from text, URLs and contact details.",
+  "description": "QR Code Generator is a simple, offline-first Android app: generate QR codes from text, URLs and contact details. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Generate qr codes from text",
+    "Urls",
+    "Contact details"
+  ],
+  "featured": true,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "generate qr codes from text",
+      "urls",
+      "contact details"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

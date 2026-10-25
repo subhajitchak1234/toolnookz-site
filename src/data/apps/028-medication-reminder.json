@@ -1,0 +1,29 @@
+{
+  "id": 28,
+  "slug": "medication-reminder",
+  "name": "Medication Reminder",
+  "category": "health",
+  "tagline": "User-entered medication schedule and reminders.",
+  "description": "Medication Reminder is a simple, offline-first Android app: user-entered medication schedule and reminders. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "User-entered medication schedule",
+    "Reminders"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "user-entered medication schedule",
+      "reminders"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

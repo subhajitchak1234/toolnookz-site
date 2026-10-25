@@ -1,0 +1,31 @@
+{
+  "id": 13,
+  "slug": "bill-reminder",
+  "name": "Bill Reminder",
+  "category": "finance",
+  "tagline": "Reminders for utilities, rent and recurring bills.",
+  "description": "Bill Reminder is a simple, offline-first Android app: reminders for utilities, rent and recurring bills. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Reminders for utilities",
+    "Rent",
+    "Recurring bills"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "reminders for utilities",
+      "rent",
+      "recurring bills"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 12,
+  "slug": "budget-planner",
+  "name": "Budget Planner",
+  "category": "finance",
+  "tagline": "Monthly budget and category spending limits.",
+  "description": "Budget Planner is a simple, offline-first Android app: monthly budget and category spending limits. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Monthly budget",
+    "Category spending limits"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "monthly budget",
+      "category spending limits"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": true
+  }
+}

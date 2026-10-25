@@ -1,0 +1,25 @@
+{
+  "id": 56,
+  "slug": "mental-math-trainer",
+  "name": "Mental Math Trainer",
+  "category": "education",
+  "tagline": "Arithmetic practice with scores.",
+  "description": "Mental Math Trainer is a simple, offline-first Android app: arithmetic practice with scores. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Arithmetic practice with scores"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "arithmetic practice with scores"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

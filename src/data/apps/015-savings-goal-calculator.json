@@ -1,0 +1,25 @@
+{
+  "id": 15,
+  "slug": "savings-goal-calculator",
+  "name": "Savings Goal Calculator",
+  "category": "finance",
+  "tagline": "Calculate savings needed to reach a target.",
+  "description": "Savings Goal Calculator is a simple, offline-first Android app: calculate savings needed to reach a target. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Calculate savings needed to reach a target"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "calculate savings needed to reach a target"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

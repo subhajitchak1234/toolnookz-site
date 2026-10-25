@@ -1,0 +1,27 @@
+{
+  "id": 69,
+  "slug": "shopping-price-book",
+  "name": "Shopping Price Book",
+  "category": "home",
+  "tagline": "Track past prices and compare unit prices.",
+  "description": "Shopping Price Book is a simple, offline-first Android app: track past prices and compare unit prices. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Track past prices",
+    "Compare unit prices"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "track past prices",
+      "compare unit prices"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

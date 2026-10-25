@@ -1,0 +1,29 @@
+{
+  "id": 34,
+  "slug": "word-and-character-counter",
+  "name": "Word & Character Counter",
+  "category": "notes",
+  "tagline": "Count words, characters and sentences.",
+  "description": "Word & Character Counter is a simple, offline-first Android app: count words, characters and sentences. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Count words",
+    "Characters",
+    "Sentences"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "count words",
+      "characters",
+      "sentences"
+    ],
+    "permissions": [],
+    "uses_clipboard": true,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

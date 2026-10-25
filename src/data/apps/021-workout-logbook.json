@@ -1,0 +1,33 @@
+{
+  "id": 21,
+  "slug": "workout-logbook",
+  "name": "Workout Logbook",
+  "category": "health",
+  "tagline": "Exercises, sets, reps, weights and personal records.",
+  "description": "Workout Logbook is a simple, offline-first Android app: exercises, sets, reps, weights and personal records. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Exercises",
+    "Sets",
+    "Reps",
+    "Weights",
+    "Personal records"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "exercises",
+      "sets",
+      "reps",
+      "weights",
+      "personal records"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": true
+  }
+}

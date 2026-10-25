@@ -1,0 +1,33 @@
+{
+  "id": 2,
+  "slug": "daily-habit-tracker",
+  "name": "Daily Habit Tracker",
+  "category": "productivity",
+  "tagline": "Habits, streaks, reminders and weekly progress.",
+  "description": "Daily Habit Tracker is a simple, offline-first Android app: habits, streaks, reminders and weekly progress. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Habits",
+    "Streaks",
+    "Reminders",
+    "Weekly progress"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "habits",
+      "streaks",
+      "reminders",
+      "weekly progress"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": true
+  }
+}

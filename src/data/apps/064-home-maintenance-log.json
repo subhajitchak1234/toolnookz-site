@@ -1,0 +1,31 @@
+{
+  "id": 64,
+  "slug": "home-maintenance-log",
+  "name": "Home Maintenance Log",
+  "category": "home",
+  "tagline": "Track repairs, filters and appliance maintenance.",
+  "description": "Home Maintenance Log is a simple, offline-first Android app: track repairs, filters and appliance maintenance. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Track repairs",
+    "Filters",
+    "Appliance maintenance"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "track repairs",
+      "filters",
+      "appliance maintenance"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

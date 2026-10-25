@@ -1,0 +1,27 @@
+{
+  "id": 20,
+  "slug": "personal-net-worth-tracker",
+  "name": "Personal Net Worth Tracker",
+  "category": "finance",
+  "tagline": "Track assets and liabilities over time.",
+  "description": "Personal Net Worth Tracker is a simple, offline-first Android app: track assets and liabilities over time. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Track assets",
+    "Liabilities over time"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "track assets",
+      "liabilities over time"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

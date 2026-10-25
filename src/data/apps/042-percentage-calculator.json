@@ -1,0 +1,31 @@
+{
+  "id": 42,
+  "slug": "percentage-calculator",
+  "name": "Percentage Calculator",
+  "category": "calculators",
+  "tagline": "Percentage change, increase, decrease and difference.",
+  "description": "Percentage Calculator is a simple, offline-first Android app: percentage change, increase, decrease and difference. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Percentage change",
+    "Increase",
+    "Decrease",
+    "Difference"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "percentage change",
+      "increase",
+      "decrease",
+      "difference"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 49,
+  "slug": "fuel-cost-calculator",
+  "name": "Fuel Cost Calculator",
+  "category": "calculators",
+  "tagline": "Estimate trip fuel cost from distance and mileage.",
+  "description": "Fuel Cost Calculator is a simple, offline-first Android app: estimate trip fuel cost from distance and mileage. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Estimate trip fuel cost from distance",
+    "Mileage"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "estimate trip fuel cost from distance",
+      "mileage"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

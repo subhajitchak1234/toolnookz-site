@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block desc %}{{ app.description }}{% endblock %}
+{% block main %}
+<section class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="/apps/">Apps</a> / {{ app.cat.name }}</p>
+  <div class="app-hero">
+    {{ m.icon(app.cat, 96) }}
+    <div>
+      <h1>{{ app.name }}</h1>
+      <p class="lead">{{ app.tagline }}</p>
+      <div class="actions">{{ m.play(app) }}<a class="btn ghost" href="/apps/{{ app.slug }}/privacy/">Privacy Policy</a></div>
+    </div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap two-col">
+  <div>
+    <h2>About this app</h2>
+    <p>{{ app.description }}</p>
+    <h2>Features</h2>
+    <ul class="checks">{% for f in app.features %}<li>{{ f }}</li>{% endfor %}</ul>
+  </div>
+  <aside class="side-card">
+    <h3>Data &amp; permissions</h3>
+    <p class="muted">What this app asks for. Full details are in the <a href="/apps/{{ app.slug }}/privacy/">privacy policy</a>.</p>
+    <ul class="plain">
+      <li>Your entries are stored on your device.</li>
+      {% for p in app.privacy.permissions %}<li>{{ perms[p][0] }}</li>{% endfor %}
+      {% if not app.privacy.permissions %}<li>No special device permissions.</li>{% endif %}
+      {% if app.privacy.ads %}<li>Shows ads (Google AdMob).</li>{% endif %}
+      {% if app.privacy.premium %}<li>Optional premium upgrade.</li>{% endif %}
+    </ul>
+  </aside>
+</div></section>
+{% if related %}
+<section class="section alt"><div class="wrap">
+  <div class="section-head"><h2>More in {{ app.cat.name }}</h2></div>
+  <div class="grid grid-3">{% for a in related %}{{ m.card(a) }}{% endfor %}</div>
+</div></section>
+{% endif %}
+{% endblock %}

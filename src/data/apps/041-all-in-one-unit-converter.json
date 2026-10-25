@@ -1,0 +1,33 @@
+{
+  "id": 41,
+  "slug": "all-in-one-unit-converter",
+  "name": "All-in-One Unit Converter",
+  "category": "calculators",
+  "tagline": "Convert length, mass, temperature, area and volume.",
+  "description": "All-in-One Unit Converter is a simple, offline-first Android app: convert length, mass, temperature, area and volume. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Convert length",
+    "Mass",
+    "Temperature",
+    "Area",
+    "Volume"
+  ],
+  "featured": true,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "convert length",
+      "mass",
+      "temperature",
+      "area",
+      "volume"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

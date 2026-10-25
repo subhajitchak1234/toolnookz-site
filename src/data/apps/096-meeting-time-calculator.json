@@ -1,0 +1,27 @@
+{
+  "id": 96,
+  "slug": "meeting-time-calculator",
+  "name": "Meeting Time Calculator",
+  "category": "lifestyle",
+  "tagline": "Plan meeting duration and time zones.",
+  "description": "Meeting Time Calculator is a simple, offline-first Android app: plan meeting duration and time zones. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Plan meeting duration",
+    "Time zones"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "plan meeting duration",
+      "time zones"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

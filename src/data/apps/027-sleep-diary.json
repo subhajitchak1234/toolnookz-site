@@ -1,0 +1,29 @@
+{
+  "id": 27,
+  "slug": "sleep-diary",
+  "name": "Sleep Diary",
+  "category": "health",
+  "tagline": "Bedtime, wake time and subjective sleep notes.",
+  "description": "Sleep Diary is a simple, offline-first Android app: bedtime, wake time and subjective sleep notes. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Bedtime",
+    "Wake time",
+    "Subjective sleep notes"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "bedtime",
+      "wake time",
+      "subjective sleep notes"
+    ],
+    "permissions": [],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}

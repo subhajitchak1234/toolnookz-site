@@ -1,0 +1,31 @@
+{
+  "id": 68,
+  "slug": "gift-planner",
+  "name": "Gift Planner",
+  "category": "home",
+  "tagline": "Occasions, gift ideas and purchase status.",
+  "description": "Gift Planner is a simple, offline-first Android app: occasions, gift ideas and purchase status. It keeps its data on your device and is built to be quick to open and easy to use.",
+  "features": [
+    "Occasions",
+    "Gift ideas",
+    "Purchase status"
+  ],
+  "featured": false,
+  "status": "coming-soon",
+  "play_url": "",
+  "privacy": {
+    "data_entered": [
+      "occasions",
+      "gift ideas",
+      "purchase status"
+    ],
+    "permissions": [
+      "notifications"
+    ],
+    "uses_clipboard": false,
+    "ads": true,
+    "premium": true,
+    "device_backup": true,
+    "export": false
+  }
+}
