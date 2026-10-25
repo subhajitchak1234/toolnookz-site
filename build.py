@@ -55,7 +55,7 @@ def main():
     if OUT.exists():
         for p in OUT.iterdir():
             shutil.rmtree(p) if p.is_dir() else p.unlink()
-    OUT.mkdir()
+    OUT.mkdir(exist_ok=True)
     shutil.copytree(SRC / "static", OUT / "assets")
     (OUT / "CNAME").write_text(site["domain"] + "\n")
     (OUT / ".nojekyll").write_text("")
