@@ -2,29 +2,42 @@
 {% block main %}
 <section class="hero"><div class="wrap hero-grid">
   <div>
-    <span class="pill">Simple Apps. Better Life.</span>
-    <h1>Useful Android Apps<br>for Everyday Life</h1>
-    <p class="lead">We build simple, fast and privacy-friendly Android apps to make your daily tasks easier. Explore our collection and find the one you need.</p>
-    <form class="search big" action="/apps/" method="get" role="search">
-      <input type="search" name="q" placeholder="Search apps..." aria-label="Search apps">
-      <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-    </form>
-    <ul class="trust">
-      <li><strong>Offline-first</strong><span>Works without internet</span></li>
-      <li><strong>Privacy focused</strong><span>Your data matters</span></li>
-      <li><strong>Simple &amp; fast</strong><span>Does one thing well</span></li>
-      <li><strong>Support</strong><span>We're here to help</span></li>
+    <p class="eyebrow">Android apps • Tools • Trackers • Calculators</p>
+    <h1>Simple Tools <span class="sp">✦</span> Better Days<br>Your Data Stays Yours</h1>
+    <p class="lead">Toolnookz builds simple, fast and privacy-friendly Android apps that make everyday tasks easier. Browse the collection and find the one you need.</p>
+    <div class="btns"><a class="btn" href="/apps/">Browse All Apps <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/privacy/">Privacy Policies</a></div>
+    <ul class="tr">
+      <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg>Simple &amp; fast</li>
+      <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg>Privacy focused</li>
+      <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5S4 15.5 4 9.5A4.3 4.3 0 018 5.5c1.8 0 3.2 1 4 2.5.8-1.500 2.2-2.500 4-2.500a4.300 4.300 0 014 4c0 6-8 11-8 11z"/></svg>Offline-first</li>
     </ul>
   </div>
   <div class="hero-art" aria-hidden="true">
     <div class="phone"><div class="phone-screen">
-      {% for a in featured %}{{ m.icon(a.cat, 52) }}{% endfor %}
-      {% for c in cats[:4] %}{{ m.icon(c, 52) }}{% endfor %}
+      {% for a in shown[:6] %}{{ m.icon(a.cat, 52) }}{% endfor %}
+      {% for c in cats[:3] %}{{ m.icon(c, 52) }}{% endfor %}
     </div></div>
   </div>
 </div></section>
+
+<section><div class="wrap"><div class="catbar">
+  {% for c in cats %}<a class="cat" href="/apps/?cat={{ c.slug }}"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ m.glyph(c.icon) }}</svg></span><span>{{ c.name }}</span></a>{% endfor %}
+</div></div></section>
+
 <section class="section"><div class="wrap">
-  <div class="section-head"><div><h2>Featured Apps</h2><p class="muted">Discover some of our apps.</p></div><a class="btn ghost" href="/apps/">View All Apps →</a></div>
-  <div class="grid grid-4">{% for a in featured %}{{ m.card(a) }}{% endfor %}</div>
+  <div class="section-head"><div><h2>Featured Apps</h2><p class="muted">Discover some of our apps.</p></div><a class="link-more" href="/apps/">View All Apps <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <div class="grid grid-4">{% for a in shown %}{{ m.card(a) }}{% endfor %}</div>
 </div></section>
+
+<section><div class="wrap promos">
+  <div class="promo p1"><span class="eyebrow">Your data, your device</span><h3>Apps That Respect Your Privacy</h3><p>Every app has its own clear privacy policy explaining what it stores and which permissions it uses.</p><a class="btn" href="/privacy/">Read Policies <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <div class="promo p2"><span class="eyebrow">Questions or ideas?</span><h3>We'd Love to Hear From You</h3><p>Feedback, bug reports and feature ideas help us make better apps.</p><a class="btn" href="/contact/">Contact Us <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div></section>
+
+<section class="section"><div class="wrap"><div class="tbar">
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg><div><b>Simple &amp; Fast</b><small>Each app does one thing well</small></div></div>
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 018 0v2.5M12 14.5v2.5"/></svg><div><b>Privacy Focused</b><small>Your entries stay on your device</small></div></div>
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><div><b>Works Offline</b><small>No internet needed for core features</small></div></div>
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg><div><b>Friendly Support</b><small>Email us any time</small></div></div>
+</div></div></section>
 {% endblock %}
