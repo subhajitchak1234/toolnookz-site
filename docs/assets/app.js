@@ -1,12 +1,5 @@
 (function(){
   var root=document.documentElement;
-  // theme toggle
-  var tb=document.getElementById('theme');
-  if(tb)tb.addEventListener('click',function(){
-    var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
-    var next=dark?'light':'dark';root.dataset.theme=next;
-    try{localStorage.setItem('theme',next)}catch(e){}
-  });
   // mobile menu
   var mb=document.getElementById('menu'),nav=document.getElementById('nav');
   if(mb)mb.addEventListener('click',function(){
@@ -40,6 +33,8 @@
     q.addEventListener('input',function(){page=1;render()});
     chips.forEach(function(b){b.addEventListener('click',function(){
       chips.forEach(function(x){x.classList.remove('is-on')});b.classList.add('is-on');c=b.dataset.cat;page=1;render()})});
+    var ic=new URLSearchParams(location.search).get('cat');
+    if(ic){var m=chips.filter(function(b){return b.dataset.cat===ic})[0];if(m){chips.forEach(function(x){x.classList.remove('is-on')});m.classList.add('is-on');c=ic}}
     render();
   }
   // privacy index filter

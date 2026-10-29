@@ -7,12 +7,11 @@
 <meta name="description" content="Toolnookz builds simple, fast and privacy-friendly android apps. Browse our apps and read each app's privacy policy.">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
-<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
-  <a class="brand" href="/"><span class="logo">T</span>Toolnookz</a>
+  <a class="brand" href="/" aria-label="Toolnookz home"><svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="12" fill="#0F4D3A"/><path d="M12 14h20M22 14v17" stroke="#CDEBDD" stroke-width="4.5" stroke-linecap="round" fill="none"/><circle cx="32" cy="31" r="3" fill="#3FA37A"/></svg>Toolnookz</a>
   <nav id="nav" class="nav" aria-label="Main">
     <a href="/" aria-current="page">Home</a>
     <a href="/apps/" >Apps</a>
@@ -20,26 +19,22 @@
     <a href="/terms/" >Terms &amp; Conditions</a>
     <a href="/contact/" >Contact</a>
   </nav>
-  <div class="tools">
-    <a class="icon-btn" href="/apps/#search" aria-label="Search apps"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
-    <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
-    <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
+  <form class="hsearch" action="/apps/" method="get" role="search">
+    <input type="search" name="q" placeholder="Search apps..." aria-label="Search apps">
+    <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  </form>
+  <button class="menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div></header>
 <main id="main"><section class="hero"><div class="wrap hero-grid">
   <div>
-    <span class="pill">Simple Apps. Better Life.</span>
-    <h1>Useful Android Apps<br>for Everyday Life</h1>
-    <p class="lead">We build simple, fast and privacy-friendly Android apps to make your daily tasks easier. Explore our collection and find the one you need.</p>
-    <form class="search big" action="/apps/" method="get" role="search">
-      <input type="search" name="q" placeholder="Search apps..." aria-label="Search apps">
-      <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-    </form>
-    <ul class="trust">
-      <li><strong>Offline-first</strong><span>Works without internet</span></li>
-      <li><strong>Privacy focused</strong><span>Your data matters</span></li>
-      <li><strong>Simple &amp; fast</strong><span>Does one thing well</span></li>
-      <li><strong>Support</strong><span>We're here to help</span></li>
+    <p class="eyebrow">Android apps • Tools • Trackers • Calculators</p>
+    <h1>Simple Tools <span class="sp">✦</span> Better Days<br>Your Data Stays Yours</h1>
+    <p class="lead">Toolnookz builds simple, fast and privacy-friendly Android apps that make everyday tasks easier. Browse the collection and find the one you need.</p>
+    <div class="btns"><a class="btn" href="/apps/">Browse All Apps <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/privacy/">Privacy Policies</a></div>
+    <ul class="tr">
+      <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg>Simple &amp; fast</li>
+      <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg>Privacy focused</li>
+      <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5S4 15.5 4 9.5A4.3 4.3 0 018 5.5c1.8 0 3.2 1 4 2.5.8-1.500 2.2-2.500 4-2.500a4.300 4.300 0 014 4c0 6-8 11-8 11z"/></svg>Offline-first</li>
     </ul>
   </div>
   <div class="hero-art" aria-hidden="true">
@@ -59,20 +54,37 @@
 <span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:52px" aria-hidden="true">
 <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
 </svg></span>
+<span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:52px" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span>
+<span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:52px" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span>
 <span class="app-icon" style="--c1:#f97316;--c2:#ea580c;--s:52px" aria-hidden="true">
 <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16.5" cy="13.5" r="1.2"/>
 </svg></span>
 <span class="app-icon" style="--c1:#10b981;--c2:#059669;--s:52px" aria-hidden="true">
 <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>
 </svg></span>
-<span class="app-icon" style="--c1:#f59e0b;--c2:#d97706;--s:52px" aria-hidden="true">
-<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>
-</svg></span>
     </div></div>
   </div>
 </div></section>
+
+<section><div class="wrap"><div class="catbar">
+<a class="cat" href="/apps/?cat=productivity"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span><span>Productivity</span></a><a class="cat" href="/apps/?cat=finance"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16.5" cy="13.5" r="1.2"/>
+</svg></span><span>Finance</span></a><a class="cat" href="/apps/?cat=health"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>
+</svg></span><span>Health</span></a><a class="cat" href="/apps/?cat=notes"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>
+</svg></span><span>Notes &amp; Text</span></a><a class="cat" href="/apps/?cat=calculators"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M8 16h2M12 16h2"/>
+</svg></span><span>Calculators</span></a><a class="cat" href="/apps/?cat=education"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 8h6"/>
+</svg></span><span>Education</span></a><a class="cat" href="/apps/?cat=home"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10M10 20v-5h4v5"/>
+</svg></span><span>Home</span></a><a class="cat" href="/apps/?cat=travel"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13l18-8-6 15-3-6z"/><path d="M12 14l-1 5"/>
+</svg></span><span>Travel</span></a><a class="cat" href="/apps/?cat=tools"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M3 17l5-4 4 3 3-2 6 4"/>
+</svg></span><span>Tools</span></a><a class="cat" href="/apps/?cat=lifestyle"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16v4M17 18h4"/>
+</svg></span><span>Lifestyle</span></a></div></div></section>
+
 <section class="section"><div class="wrap">
-  <div class="section-head"><div><h2>Featured Apps</h2><p class="muted">Discover some of our apps.</p></div><a class="btn ghost" href="/apps/">View All Apps →</a></div>
+  <div class="section-head"><div><h2>Featured Apps</h2><p class="muted">Discover some of our apps.</p></div><a class="link-more" href="/apps/">View All Apps <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   <div class="grid grid-4"><article class="card app-card" data-name="quick notes" data-text="quick notes fast note capture, pinning, tags and search. notes &amp; text" data-cat="notes">
   <a class="card-link" href="/apps/quick-notes/" aria-label="Quick Notes"></a>
   <div class="card-top"><span class="app-icon" style="--c1:#f59e0b;--c2:#d97706;--s:48px" aria-hidden="true">
@@ -105,15 +117,62 @@
 <div><h3>Warranty Tracker</h3><p>Track purchases, warranty dates and receipt notes.</p></div></div>
   <div class="card-bottom"><span class="tag">Lifestyle</span><a class="more" href="/apps/warranty-tracker/privacy/">Privacy Policy →</a></div>
 </article>
+<article class="card app-card" data-name="focus timer" data-text="focus timer pomodoro sessions, focus goals, session history and widget. productivity" data-cat="productivity">
+  <a class="card-link" href="/apps/focus-timer/" aria-label="Focus Timer"></a>
+  <div class="card-top"><span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:48px" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span>
+<div><h3>Focus Timer</h3><p>Pomodoro sessions, focus goals, session history and widget.</p></div></div>
+  <div class="card-bottom"><span class="tag">Productivity</span><a class="more" href="/apps/focus-timer/privacy/">Privacy Policy →</a></div>
+</article>
+<article class="card app-card" data-name="daily habit tracker" data-text="daily habit tracker habits, streaks, reminders and weekly progress. productivity" data-cat="productivity">
+  <a class="card-link" href="/apps/daily-habit-tracker/" aria-label="Daily Habit Tracker"></a>
+  <div class="card-top"><span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:48px" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span>
+<div><h3>Daily Habit Tracker</h3><p>Habits, streaks, reminders and weekly progress.</p></div></div>
+  <div class="card-bottom"><span class="tag">Productivity</span><a class="more" href="/apps/daily-habit-tracker/privacy/">Privacy Policy →</a></div>
+</article>
+<article class="card app-card" data-name="daily task planner" data-text="daily task planner tasks, priorities, deadlines and recurring tasks. productivity" data-cat="productivity">
+  <a class="card-link" href="/apps/daily-task-planner/" aria-label="Daily Task Planner"></a>
+  <div class="card-top"><span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:48px" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span>
+<div><h3>Daily Task Planner</h3><p>Tasks, priorities, deadlines and recurring tasks.</p></div></div>
+  <div class="card-bottom"><span class="tag">Productivity</span><a class="more" href="/apps/daily-task-planner/privacy/">Privacy Policy →</a></div>
+</article>
+<article class="card app-card" data-name="morning routine checklist" data-text="morning routine checklist reusable morning routine and completion checklist. productivity" data-cat="productivity">
+  <a class="card-link" href="/apps/morning-routine-checklist/" aria-label="Morning Routine Checklist"></a>
+  <div class="card-top"><span class="app-icon" style="--c1:#4f46e5;--c2:#7c3aed;--s:48px" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+</svg></span>
+<div><h3>Morning Routine Checklist</h3><p>Reusable morning routine and completion checklist.</p></div></div>
+  <div class="card-bottom"><span class="tag">Productivity</span><a class="more" href="/apps/morning-routine-checklist/privacy/">Privacy Policy →</a></div>
+</article>
 </div>
 </div></section>
+
+<section><div class="wrap promos">
+  <div class="promo p1"><span class="eyebrow">Your data, your device</span><h3>Apps That Respect Your Privacy</h3><p>Every app has its own clear privacy policy explaining what it stores and which permissions it uses.</p><a class="btn" href="/privacy/">Read Policies <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <div class="promo p2"><span class="eyebrow">Questions or ideas?</span><h3>We'd Love to Hear From You</h3><p>Feedback, bug reports and feature ideas help us make better apps.</p><a class="btn" href="/contact/">Contact Us <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div></section>
+
+<section class="section"><div class="wrap"><div class="tbar">
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5L5 13.5h6l-1 8 8-11h-6z"/></svg><div><b>Simple &amp; Fast</b><small>Each app does one thing well</small></div></div>
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 018 0v2.5M12 14.5v2.5"/></svg><div><b>Privacy Focused</b><small>Your entries stay on your device</small></div></div>
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg><div><b>Works Offline</b><small>No internet needed for core features</small></div></div>
+  <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg><div><b>Friendly Support</b><small>Email us any time</small></div></div>
+</div></div></section>
 </main>
 <footer class="site-footer"><div class="wrap">
-  <div class="foot-top">
-    <div><a class="brand" href="/"><span class="logo">T</span>Toolnookz</a><p class="muted">Simple tools. Your data stays yours.</p></div>
-    <nav class="foot-nav" aria-label="Footer"><a href="/">Home</a><a href="/apps/">Apps</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/contact/">Contact</a></nav>
+  <div class="fg">
+    <div><a class="brand" href="/"><svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="12" fill="#0F4D3A"/><path d="M12 14h20M22 14v17" stroke="#CDEBDD" stroke-width="4.5" stroke-linecap="round" fill="none"/><circle cx="32" cy="31" r="3" fill="#3FA37A"/></svg>Toolnookz</a><p class="muted">Simple, fast and privacy-friendly Android apps. Your data stays yours.</p></div>
+    <div><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    <div><h4>Categories</h4><ul><li><a href="/apps/?cat=productivity">Productivity</a></li><li><a href="/apps/?cat=finance">Finance</a></li><li><a href="/apps/?cat=health">Health</a></li><li><a href="/apps/?cat=notes">Notes &amp; Text</a></li><li><a href="/apps/?cat=calculators">Calculators</a></li><li><a href="/apps/?cat=education">Education</a></li></ul></div>
   </div>
-  <div class="foot-bot"><span>© 2026 Toolnookz. All rights reserved.</span><span>Built for Android users.</span></div>
+  <div class="fb"><span>© 2026 Toolnookz. All rights reserved.</span>
+    <nav aria-label="Footer"><a href="/terms/">Terms &amp; Conditions</a><a href="/privacy/">Privacy Policy</a></nav>
+    <a class="top" href="#" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14l6-6 6 6"/></svg></a></div>
 </div></footer>
 <script src="/assets/app.js" defer></script>
 </body>

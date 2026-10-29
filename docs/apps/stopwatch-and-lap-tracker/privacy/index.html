@@ -7,12 +7,11 @@
 <meta name="description" content="Privacy policy for Stopwatch &amp; Lap Tracker by Toolnookz: what the app stores, which permissions it uses and which third parties are involved.">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
-<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
-  <a class="brand" href="/"><span class="logo">T</span>Toolnookz</a>
+  <a class="brand" href="/" aria-label="Toolnookz home"><svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="12" fill="#0F4D3A"/><path d="M12 14h20M22 14v17" stroke="#CDEBDD" stroke-width="4.5" stroke-linecap="round" fill="none"/><circle cx="32" cy="31" r="3" fill="#3FA37A"/></svg>Toolnookz</a>
   <nav id="nav" class="nav" aria-label="Main">
     <a href="/" >Home</a>
     <a href="/apps/" >Apps</a>
@@ -20,11 +19,11 @@
     <a href="/terms/" >Terms &amp; Conditions</a>
     <a href="/contact/" >Contact</a>
   </nav>
-  <div class="tools">
-    <a class="icon-btn" href="/apps/#search" aria-label="Search apps"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
-    <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
-    <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
+  <form class="hsearch" action="/apps/" method="get" role="search">
+    <input type="search" name="q" placeholder="Search apps..." aria-label="Search apps">
+    <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+  </form>
+  <button class="menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </div></header>
 <main id="main"><section class="section"><div class="wrap policy">
   <aside class="toc" aria-label="On this page">
@@ -108,11 +107,14 @@
 </div></section>
 </main>
 <footer class="site-footer"><div class="wrap">
-  <div class="foot-top">
-    <div><a class="brand" href="/"><span class="logo">T</span>Toolnookz</a><p class="muted">Simple tools. Your data stays yours.</p></div>
-    <nav class="foot-nav" aria-label="Footer"><a href="/">Home</a><a href="/apps/">Apps</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/contact/">Contact</a></nav>
+  <div class="fg">
+    <div><a class="brand" href="/"><svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="12" fill="#0F4D3A"/><path d="M12 14h20M22 14v17" stroke="#CDEBDD" stroke-width="4.5" stroke-linecap="round" fill="none"/><circle cx="32" cy="31" r="3" fill="#3FA37A"/></svg>Toolnookz</a><p class="muted">Simple, fast and privacy-friendly Android apps. Your data stays yours.</p></div>
+    <div><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/apps/">Apps</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+    <div><h4>Categories</h4><ul><li><a href="/apps/?cat=productivity">Productivity</a></li><li><a href="/apps/?cat=finance">Finance</a></li><li><a href="/apps/?cat=health">Health</a></li><li><a href="/apps/?cat=notes">Notes &amp; Text</a></li><li><a href="/apps/?cat=calculators">Calculators</a></li><li><a href="/apps/?cat=education">Education</a></li></ul></div>
   </div>
-  <div class="foot-bot"><span>© 2026 Toolnookz. All rights reserved.</span><span>Built for Android users.</span></div>
+  <div class="fb"><span>© 2026 Toolnookz. All rights reserved.</span>
+    <nav aria-label="Footer"><a href="/terms/">Terms &amp; Conditions</a><a href="/privacy/">Privacy Policy</a></nav>
+    <a class="top" href="#" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14l6-6 6 6"/></svg></a></div>
 </div></footer>
 <script src="/assets/app.js" defer></script>
 </body>
