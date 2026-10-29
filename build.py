@@ -65,8 +65,13 @@ def main():
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(env.get_template(tpl).render(**ctx, **kw), encoding="utf-8")
 
-    write("index.html", "home.html", page="home", title=None,
-          shown=([a for a in apps if a.get("featured")] + [a for a in apps if not a.get("featured")])[:8])
+    # Hand-built homepage (src/pages/index.html) is served as-is when present.
+    custom_home = SRC / "pages" / "index.html"
+    if custom_home.exists():
+        shutil.copyfile(custom_home, OUT / "index.html")
+    else:
+        write("index.html", "home.html", page="home", title=None,
+              shown=([a for a in apps if a.get("featured")] + [a for a in apps if not a.get("featured")])[:8])
     write("apps/index.html", "apps.html", page="apps", title="All Apps")
     write("privacy/index.html", "privacy_index.html", page="privacy", title="Privacy Policy")
     write("terms/index.html", "terms.html", page="terms", title="Terms & Conditions")
